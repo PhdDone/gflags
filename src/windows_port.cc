@@ -59,6 +59,7 @@ int safe_vsnprintf(char *str, size_t size, const char *format, va_list ap) {
 #  pragma warning(pop)
 #endif
 
+/*
 int snprintf(char *str, size_t size, const char *format, ...) {
   int r;
   va_list ap;
@@ -66,6 +67,6 @@ int snprintf(char *str, size_t size, const char *format, ...) {
   r = vsnprintf(str, size, format, ap);
   va_end(ap);
   return r;
-}
+}*/
 
 #endif  /* #if !defined(__MINGW32__) && !defined(__MINGW64__) */

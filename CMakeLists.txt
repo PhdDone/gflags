@@ -58,11 +58,11 @@ list (GET       GFLAGS_NAMESPACE_SECONDARY 0 GFLAGS_NAMESPACE)
 list (REMOVE_AT GFLAGS_NAMESPACE_SECONDARY 0)
 
 option (BUILD_SHARED_LIBS          "Request build of shared libraries."                                       OFF)
-option (BUILD_STATIC_LIBS          "Request build of static libraries (default if BUILD_SHARED_LIBS is OFF)." OFF)
+option (BUILD_STATIC_LIBS          "Request build of static libraries (default if BUILD_SHARED_LIBS is OFF)." ON)
 option (BUILD_gflags_LIB           "Request build of the multi-threaded gflags library."                      ON)
 option (BUILD_gflags_nothreads_LIB "Request build of the single-threaded gflags library."                     ON)
 option (BUILD_PACKAGING            "Enable build of distribution packages using CPack."                       OFF)
-option (BUILD_TESTING              "Enable build of the unit tests and their execution using CTest."          OFF)
+option (BUILD_TESTING              "Enable build of the unit tests and their execution using CTest."          ON)
 option (BUILD_NC_TESTS             "Request addition of negative compilation tests."                          OFF)
 option (INSTALL_HEADERS            "Request packaging of headers and other development files."                ON)
 

@@ -56,6 +56,6 @@ int main(int argc, char** argv) {
   // 'strings' on it, so we construct this binary to print the real
   // name (argv[0]) on stdout when run.
   puts(argv[0]);
-
+  system("pause");
   return 0;
 }
